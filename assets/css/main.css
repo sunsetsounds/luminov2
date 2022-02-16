@@ -327,7 +327,7 @@ input, select, textarea {
 		}
 
 	body {
-		background-color: #273040; /*right half MAIN Background color*/
+    background-color: #273040; /*right half MAIN Background color*/
 		color: #ffffff;
 	}
 
@@ -3394,7 +3394,7 @@ input, select, textarea {
 		#wrapper:before {
 			background-attachment: fixed;
       background: rgb(176,202,254);
-      background: #273040; /* MAIN BACKGROUND COLOR*/
+      background: #3f4959; /* MAIN BACKGROUND COLOR*/
 
 
 			background-repeat: repeat-y;
