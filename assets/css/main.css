@@ -327,7 +327,7 @@ input, select, textarea {
 		}
 
 	body {
-    background: linear-gradient(90deg, rgba(121,166,255,1) 50%, rgba(6,0,128,0.6) 90%); /*right half MAIN Background color*/
+    background: linear-gradient(90deg, rgba(0,0,0,1) 50%, rgba(64,32,0,1) 85%, rgba(89,46,0,1) 100%); /*right half MAIN Background color*/
 		color: #ffffff;
 	}
 
@@ -3398,7 +3398,7 @@ input, select, textarea {
 			background-attachment: fixed;
       background: rgb(176,202,254);
       background: linear-gradient(90deg, rgba(176,202,254,1) 20%, rgba(255,201,143,1) 100%); /* MAIN BACKGROUND COLOR*/
-      background: linear-gradient(90deg, rgba(247,160,66,1) 10%, rgba(121,166,255,1) 100%);
+      background: linear-gradient(270deg, rgba(0,0,0,1) 50%, rgba(59,82,130,1) 100%);
       text-shadow: 2px 2px 0px #FF0000; /* FF3.5+, Opera 9+, Saf1+, Chrome, IE10 */
 
 
