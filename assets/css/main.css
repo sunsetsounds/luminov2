@@ -49,7 +49,7 @@ a{
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+  background-color: rgba(50,50,50,0.8);
 }
 
 /* Caption text */
@@ -485,7 +485,7 @@ input, select, textarea {
 		transition: border-bottom-color 0.25s ease-in-out;
 		text-decoration: none;
 		color: #ffffff;
-		
+
 	}
 
 		a:hover {
