@@ -3896,7 +3896,7 @@ input, select, textarea {
 					#wrapper > section > header {
 						background-attachment: fixed;
             background: rgb(176,202,254);
-            background: #3f4959; /*BEFORE MAIN BACKGROUND COLOR*/
+            background: linear-gradient(270deg, rgba(0,0,0,1) 0%, rgba(59,82,130,1) 100%); /*BEFORE MAIN BACKGROUND COLOR*/
 						background-repeat: repeat-y;
 						background-size: 100% auto;
 					}
