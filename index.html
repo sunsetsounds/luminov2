@@ -49,6 +49,9 @@
 		var ml_account = ml('accounts', '3263860', 'a5d9k1a4k5', 'load');
 		</script>
 		<!-- End MailerLite Universal -->
+		<!-- SLIDESHOW -->
+
+
 	</head>
 	<body class="is-preload">
 
@@ -69,7 +72,7 @@
 								Lumino V2</h1>
 							<h3 style="margin-bottom: 10px; font-size:1rem">Redefining HiFi </h3>
 
-<br>
+								<br>
 								<div class="content">
 									<p><strong>Ready to take the next step with us?</strong><br> ﻿Let us keep you in the loop!</p>
 								</div>
@@ -93,13 +96,85 @@
 						<header>
 							<h2>Portable High Fidelity Audio Reproduction</h2>
 						</header>
+
 						<div class="content">
 							<h3>Design Philosophy and Overview</h3>
-							<div class ="videoWrapper">
-								<iframe width="100%" height="auto" src="https://www.youtube.com/embed/vu6hSmq649Q" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+							<!-- Slideshow container -->
+							<div class="slideshow-container" style="margin-bottom: -35px;">
+							  <!-- Full-width images with number and caption text -->
+							  <div class="mySlides fade">
+							    <div class="numbertext">1 / 5</div>
+							    <img class = "round" src="images/luminov2 - higher angle - mirrored.png" style="width:100%">
+
+							  </div>
+							  <div class="mySlides fade">
+							    <div class="numbertext">2 / 5</div>
+							    <img class = "round" src="images/luminov2 - back left 18deg light.png" style="width:100%">
+
+							  </div>
+							  <div class="mySlides fade">
+							    <div class="numbertext">3 / 5</div>
+							    <img class = "round" src="images/luminov2-internals.png" style="width:100%">
+
+							  </div>
+								<div class="mySlides fade">
+							    <div class="numbertext">4 / 5</div>
+							    <img class = "round" src="images/luminov2-internalsTop.png" style="width:100%">
+
+							  </div>
+								<div class="mySlides fade">
+							    <div class="numbertext">5 / 5</div>
+							    <img class = "round" src="images/luminov2-internalsUnder.png" style="width:100%">
+
+							  </div>
+							  <!-- Next and previous buttons -->
+
+							  <a style = "text-decoration: none !important;" class="prev" onclick="plusSlides(-1)">&#10094;</a>
+							  <a style = "text-decoration: none !important;" class="next" onclick="plusSlides(1)">&#10095;</a>
 							</div>
 							<br>
-							<p><strong>Lumino+ and Lumino</strong> are portable HiFi speakers that place a strong emphasis on sound quality and attention to detail.
+
+							<!-- The dots/circles -->
+							<div style="text-align:center; padding-top: -10px;">
+							  <span class="dot" onclick="currentSlide(1)"></span>
+							  <span class="dot" onclick="currentSlide(2)"></span>
+							  <span class="dot" onclick="currentSlide(3)"></span>
+								<span class="dot" onclick="currentSlide(4)"></span>
+								<span class="dot" onclick="currentSlide(5)"></span>
+							</div>
+
+							<script>
+								let slideIndex = 1;
+								showSlides(slideIndex);
+
+								// Next/previous controls
+								function plusSlides(n) {
+								  showSlides(slideIndex += n);
+								}
+
+								// Thumbnail image controls
+								function currentSlide(n) {
+								  showSlides(slideIndex = n);
+								}
+
+								function showSlides(n) {
+								  let i;
+								  let slides = document.getElementsByClassName("mySlides");
+								  let dots = document.getElementsByClassName("dot");
+								  if (n > slides.length) {slideIndex = 1}
+								  if (n < 1) {slideIndex = slides.length}
+								  for (i = 0; i < slides.length; i++) {
+								    slides[i].style.display = "none";
+								  }
+								  for (i = 0; i < dots.length; i++) {
+								    dots[i].className = dots[i].className.replace(" active", "");
+								  }
+								  slides[slideIndex-1].style.display = "block";
+								  dots[slideIndex-1].className += " active";
+								}
+							</script>
+							<p style="margin-top:25px;"><strong>Lumino+ and Lumino</strong> are portable HiFi speakers that place a strong emphasis on sound quality and attention to detail.
 								Before Lumino, high fidelity audio systems were confined to static home setups to provide outstanding listening experience.
 								Portable speakers sacrifice sound quality and attention to detail for the sake of convenience and high unit production in a fast market.
 								Sunset Sounds has developed and engineered Lumino, an audio solution
@@ -108,7 +183,7 @@
 							 HiFi quality audio wherever you go!
 
 							 </p>
-							<span class="image main"><img src="images/pic02.png" alt="" /></span>
+							<span class="image main"><img src="" alt="" /></span>
 						</div>
 					</section>
 
