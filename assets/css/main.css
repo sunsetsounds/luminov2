@@ -7,6 +7,12 @@ a{
     text-decoration:none;
 }
 
+.collapse{
+	transition: opacity 0.5s ease-in-out;
+	overflow: hidden;
+}
+
+
 /* Slideshow container */
 .slideshow-container {
   max-width: 1000px;

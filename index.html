@@ -49,8 +49,44 @@
 		var ml_account = ml('accounts', '3263860', 'a5d9k1a4k5', 'load');
 		</script>
 		<!-- End MailerLite Universal -->
-		<!-- SLIDESHOW -->
+		<!-- collapse -->
+		<script>
+		function collapse(args,args2,args3) {
+			var x = document.getElementById(args);
+			var y = document.getElementById(args2);
+			var z = document.getElementById(args3);
+			if (x.style.opacity == "0") {
+				y.style.opacity = "0";
+				z.style.opacity = "0";
+				x.style.opacity = "1";
+				y.style.height = "0";
+				z.style.height = "0";
+				x.style.height = "100%";
 
+			} else {
+				x.style.opacity = "0";
+				x.style.height = "0";
+			}
+
+		}
+		</script>
+		<!-- Meta Pixel Code -->
+		<script>
+		!function(f,b,e,v,n,t,s)
+		{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+		n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+		if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+		n.queue=[];t=b.createElement(e);t.async=!0;
+		t.src=v;s=b.getElementsByTagName(e)[0];
+		s.parentNode.insertBefore(t,s)}(window, document,'script',
+		'https://connect.facebook.net/en_US/fbevents.js%27');
+		fbq('init', '1738583982974456');
+		fbq('track', 'PageView');
+		</script>
+		<noscript><img height="1" width="1" style="display:none"
+		src="https://www.facebook.com/tr?id=1738583982974456&ev=PageView&noscript=1"
+		/></noscript>
+		<!-- End Meta Pixel Code -->
 
 	</head>
 	<body class="is-preload">
@@ -69,7 +105,7 @@
 						</span>
 						<span class="icon-nocolorlogo" style="font-size: 7rem; padding-bottom: 50px; display:block;"></span>
 							<h1 style="margin-bottom: 0; display:block; font-size:4rem">
-								Lumino V2</h1>
+								Lumino v2</h1>
 							<h3 style="margin-bottom: 10px; font-size:1rem">Redefining HiFi </h3>
 
 								<br>
@@ -211,6 +247,53 @@
 								*F3 is characteristic of a speaker's bass. It is the frequency achieved at -3dB from nominal. The lower, the better. <br>
 								**A modest estimate. Playtime can <b>drastically</b> improve at lower volumes.</p>
 
+
+						</div>
+					</section>
+						<section>
+							<header>
+								<h2 id="documents">In-depth Dive</h2>
+							</header>
+							<div class="content">
+								<p style="margin-bottom: -10px;"><strong>Click</strong> below to learn more about each topic!</p>
+							<ul class="actions" style=" margin-bottom: 0; display:inline;">
+								<li><button onclick="collapse('woodpla','petg','tpu')" class=" fit">Speaker Drivers</button></li>
+								<li><button onclick="collapse('petg','woodpla','tpu')" class="fit">Audio Performance</button></li>
+								<li><button onclick="collapse('tpu','woodpla','petg')" class="fit">Design Details</button></li>
+							</ul>
+							<hr>
+									<div id="woodpla" class="collapse" style="height: 0; opacity: 0;">
+
+								<p style="margin-bottom: 0;">
+									Wood PLA,
+									which is used on Lumino+, is a special filament made with 20% recycled wood fibers and 80% PLA. PLA is a plant-based
+									and is an <b>entirely renewable resouce</b> and is <b>biodegradable</b>. This makes Wood PLA a very sustainable choice in material in addition
+									to being <b>recyclable and industrially compostable</b>. PLA has very high strength, but it is not very ductle, leading to
+									lower durability compared to PETG. <u>This does mean that Lumino, not using PLA in favor of PETG, is more durable and shock resistant
+									than compared to Lumino+.</u>
+									</p>
+
+									</div>
+
+									<div id="petg" class="collapse" style="height: 0; opacity: 0;">
+
+										<p style="margin-bottom: 0;">
+									PETG, used on the bottom half of Lumino+ and the entirety of Lumino's enclosure, is a strong and flexible material,
+									making it more effective at protection when compared to PLA. Much like PLA, PETG is <b>recyclable</b> but is not biodegradable
+									because it is <b>oil based</b>. Still being recyclable, PETG is still a sustainable choice of materials when treated properly
+									and we are currently working on implementing a biodegradable PETG solution!
+								</p>
+								</div>
+
+
+								<div id="tpu" class="collapse" style="height: 0; opacity: 0;">
+
+									<p style="margin-bottom: 0;">
+									TPU is an extremely flexible filament that is used for Lumino's handle. This material with its high elasticity, shear strength, and flexural strength
+									give the handle a high quality and robust feel. TPU is sustainable choice because of its decent biodegradability. This material is <b>recyclable</b>, but Sunset
+									Sounds is working on a plant-based TPU alternative to allow for industrial compostability!
+								</p>
+							</div>
 
 						</div>
 						<footer>
