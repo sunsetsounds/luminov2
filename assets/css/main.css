@@ -1,6 +1,30 @@
 @import url(fontawesome-all.min.css);
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,600,700,300i,600i,700i|Raleway:600,800");
 
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #777;
+
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
 * {box-sizing:border-box}
 
 a{
@@ -27,7 +51,7 @@ a{
 }
 
 .round{
-  border-radius: 10px;"
+  border-radius: 10px;
 }
 /* Next & previous buttons */
 .prev, .next {
@@ -35,8 +59,10 @@ a{
   position: absolute;
   top: 50%;
   width: auto;
-  margin-top: -22px;
+  margin-top: -50px;
   padding: 16px;
+  padding-top: 35px;
+  padding-bottom: 35px;
   color: black;
   font-weight: bold;
   font-size: 18px;
@@ -60,7 +86,7 @@ a{
 
 /* Caption text */
 .text {
-  color: #f2f2f2;
+  color: #545353;
   font-size: 15px;
   padding: 8px 12px;
   position: absolute;
@@ -71,8 +97,8 @@ a{
 
 /* Number text (1/3 etc) */
 .numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
+  color: #545353;
+  font-size: 13px;
   padding: 8px 12px;
   position: absolute;
   top: 0;
@@ -100,11 +126,11 @@ a{
 /* Fading animation */
 .fade {
   animation-name: fade;
-  animation-duration: 1.25s;
+  animation-duration: 1.5s;
 }
 
 @keyframes fade {
-  from {opacity: .7}
+  from {opacity: .5}
   to {opacity: 1}
 }
 
@@ -295,10 +321,6 @@ section, summary, time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;}
 
-.collapse{
-	transition: opacity 0.5s ease-in-out;
-	overflow: hidden;
-}
 
 
 
@@ -2222,6 +2244,17 @@ input, select, textarea {
 			padding: 0 1.25rem;
 		}
 
+    input[type="submit"].tiny,
+		input[type="reset"].tiny,
+		input[type="button"].tiny,
+		button.tiny,
+		.button.tiny {
+			font-size: 0.5rem;
+			height: 2.1rem;
+			line-height: 2.25rem;
+			padding: 0 .7rem;
+		}
+
 		input[type="submit"].large,
 		input[type="reset"].large,
 		input[type="button"].large,
@@ -3717,7 +3750,10 @@ input, select, textarea {
 			}
 
 			#wrapper section > .content {
-				padding: 0 5rem;
+				padding-top: 0;
+        padding-bottom: 0;
+        padding-left: 2rem;
+        padding-right: 5rem;
 			}
 
 			#wrapper section > footer {

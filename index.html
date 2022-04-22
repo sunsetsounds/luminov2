@@ -136,49 +136,38 @@
 						<div class="content">
 							<h3>Design Philosophy and Overview</h3>
 
-							<!-- Slideshow container -->
-							<div class="slideshow-container" style="margin-bottom: -35px;">
-							  <!-- Full-width images with number and caption text -->
-							  <div class="mySlides fade">
-							    <div class="numbertext">1 / 5</div>
-							    <img class = "round" src="images/luminov2 - higher angle - mirrored.png" style="width:100%">
+							<!-- Slideshow container oak-->
+							<div class="slideshow-container" style="margin-bottom: -20px;">
+								  <!-- Full-width images with number and caption text -->
+								  <div class="mySlides fade">
+								    <div class="numbertext">1 / 5</div>
+								    	<img class = "round" src="images/luminov2 - higher angle - mirrored.png" style="width:100%">
+								  	</div>
+								  <div class="mySlides fade">
+								    <div class="numbertext">2 / 5</div>
+								    <img class = "round" src="images/luminov2 - back left 18deg light.png" style="width:100%">
+								  </div>
+								  <div class="mySlides fade">
+								    <div class="numbertext">3 / 5</div>
+								    <img class = "round" src="images/luminov2-internals.png" style="width:100%">
+								  </div>
+									<div class="mySlides fade">
+								    <div class="numbertext">4 / 5</div>
+								    <img class = "round" src="images/luminov2-internalsTop.png" style="width:100%">
+								  </div>
+									<div class="mySlides fade">
+								    <div class="numbertext">5 / 5</div>
+								    <img class = "round" src="images/luminov2-internalsUnder.png" style="width:100%">
+								  </div>
+								  <!-- Next and previous buttons -->
+								  <a style = "text-decoration: none !important;" class="prev" onclick="plusSlides(-1)">&#10094;</a>
+								  <a style = "text-decoration: none !important;" class="next" onclick="plusSlides(1)">&#10095;</a>
+								</div>
 
-							  </div>
-							  <div class="mySlides fade">
-							    <div class="numbertext">2 / 5</div>
-							    <img class = "round" src="images/luminov2 - back left 18deg light.png" style="width:100%">
 
-							  </div>
-							  <div class="mySlides fade">
-							    <div class="numbertext">3 / 5</div>
-							    <img class = "round" src="images/luminov2-internals.png" style="width:100%">
-
-							  </div>
-								<div class="mySlides fade">
-							    <div class="numbertext">4 / 5</div>
-							    <img class = "round" src="images/luminov2-internalsTop.png" style="width:100%">
-
-							  </div>
-								<div class="mySlides fade">
-							    <div class="numbertext">5 / 5</div>
-							    <img class = "round" src="images/luminov2-internalsUnder.png" style="width:100%">
-
-							  </div>
-							  <!-- Next and previous buttons -->
-
-							  <a style = "text-decoration: none !important;" class="prev" onclick="plusSlides(-1)">&#10094;</a>
-							  <a style = "text-decoration: none !important;" class="next" onclick="plusSlides(1)">&#10095;</a>
-							</div>
 							<br>
 
 							<!-- The dots/circles -->
-							<div style="text-align:center; padding-top: -10px;">
-							  <span class="dot" onclick="currentSlide(1)"></span>
-							  <span class="dot" onclick="currentSlide(2)"></span>
-							  <span class="dot" onclick="currentSlide(3)"></span>
-								<span class="dot" onclick="currentSlide(4)"></span>
-								<span class="dot" onclick="currentSlide(5)"></span>
-							</div>
 
 							<script>
 								let slideIndex = 1;
@@ -186,30 +175,46 @@
 
 								// Next/previous controls
 								function plusSlides(n) {
-								  showSlides(slideIndex += n);
+								showSlides(slideIndex += n);
 								}
 
 								// Thumbnail image controls
 								function currentSlide(n) {
-								  showSlides(slideIndex = n);
+								showSlides(slideIndex = n);
 								}
 
 								function showSlides(n) {
-								  let i;
-								  let slides = document.getElementsByClassName("mySlides");
-								  let dots = document.getElementsByClassName("dot");
-								  if (n > slides.length) {slideIndex = 1}
-								  if (n < 1) {slideIndex = slides.length}
-								  for (i = 0; i < slides.length; i++) {
-								    slides[i].style.display = "none";
-								  }
-								  for (i = 0; i < dots.length; i++) {
-								    dots[i].className = dots[i].className.replace(" active", "");
-								  }
-								  slides[slideIndex-1].style.display = "block";
-								  dots[slideIndex-1].className += " active";
+								let i;
+								let slides = document.getElementsByClassName("mySlides");
+								let dots = document.getElementsByClassName("dot");
+								if (n > slides.length) {slideIndex = 1}
+								if (n < 1) {slideIndex = slides.length}
+								for (i = 0; i < slides.length; i++) {
+									slides[i].style.display = "none";
 								}
+								for (i = 0; i < dots.length; i++) {
+									dots[i].className = dots[i].className.replace(" active", "");
+								}
+								slides[slideIndex-1].style.display = "block";
+								dots[slideIndex-1].className += " active";
+								}
+
 							</script>
+							<p style="font-size:.6rem; margin-top:-10px; margin-bottom:9px; text-align: center"><b>Choose</b> a color below. Colors are WIP and subject to change.</p>
+
+							<ul class="actions" style="overflow-x: scroll; padding-bottom: 15px; padding-top: 0px; margin-bottom:-0px; ">
+								<!--<li><p style="font-size: 0.8rem; font-family: "Source Sans Pro""><b>Colors:</b></p></li>-->
+								<li><button onclick="currentSlide(6)" class="tiny">Oak Wood</button></li>
+								<li><button onclick="currentSlide(11)" class="tiny">Walnut Wood</button></li>
+								<li><button onclick="currentSlide(16)" class="tiny">Cherry Wood</button></li>
+								<li><button onclick="currentSlide(21)" class="tiny">Lapis Blue</button></li>
+								<li><button onclick="currentSlide(26)" class="tiny">Carbon Black</button></li>
+								<li><button onclick="currentSlide(31)" class="tiny">Rose Gold</button></li>
+								<li><button onclick="currentSlide(36)" class="tiny">Green Tea</button></li>
+								<li><button onclick="currentSlide(41)" class="tiny">Lavender</button></li>
+								<li><button onclick="currentSlide(46)" class="tiny">Vinca Blue</button></li>
+							</ul>
+
 							<p style="margin-top:25px;"><strong>Lumino+ and Lumino</strong> are portable HiFi speakers that place a strong emphasis on sound quality and attention to detail.
 								Before Lumino, high fidelity audio systems were confined to static home setups to provide outstanding listening experience.
 								Portable speakers sacrifice sound quality and attention to detail for the sake of convenience and high unit production in a fast market.
@@ -230,9 +235,7 @@
 						</header>
 						<div class="content">
 							<p><strong>Key specifications and numbers</strong> to convince you that our formula works. </p>
-							<p> Lumino v2 features a high-performance, long-excursion, <b>5.25" (140mm) aluminum-cone main woofer</b> capable of reproducing fast transients and deep, accurate bass when coupled with
-								our precision-tuned <b>quad-array of 3.5" (90mm) passive radiators</b>. A <b>1.125" (25mm) soft dome tweeter</b> complements the woofer, providing extremely flat high-frequency response and amazing detail with minimal distortion.
-								Together, Lumino v2 delivers a complete soundstage with dreamy low-frequency bass response and crystal-clear dynamics.
+
 
 							<ul class="feature-icons">
 								<li class="icon solid fa-wave-square">35Hz - 22kHz Response</li>
@@ -246,8 +249,6 @@
 							<p style="font-size:.7rem">
 								*F3 is characteristic of a speaker's bass. It is the frequency achieved at -3dB from nominal. The lower, the better. <br>
 								**A modest estimate. Playtime can <b>drastically</b> improve at lower volumes.</p>
-
-
 						</div>
 					</section>
 						<section>
@@ -264,19 +265,18 @@
 							<hr>
 									<div id="woodpla" class="collapse" style="height: 0; opacity: 0;">
 
-								<p style="margin-bottom: 0;">
-									Wood PLA,
-									which is used on Lumino+, is a special filament made with 20% recycled wood fibers and 80% PLA. PLA is a plant-based
-									and is an <b>entirely renewable resouce</b> and is <b>biodegradable</b>. This makes Wood PLA a very sustainable choice in material in addition
-									to being <b>recyclable and industrially compostable</b>. PLA has very high strength, but it is not very ductle, leading to
-									lower durability compared to PETG. <u>This does mean that Lumino, not using PLA in favor of PETG, is more durable and shock resistant
-									than compared to Lumino+.</u>
+
+									<h3 class="icon solid fa-volume-up"> Drivers Built for HiFi</h3>
+									<p style="margin-bottom: 0;">
+									Lumino v2 features a high-performance, long-excursion, <b>5.25" (140mm) aluminum-cone main woofer</b> capable of reproducing fast transients and deep, accurate bass when coupled with
+										our precision-tuned <b>quad-array of 3.5" (90mm) passive radiators</b>. A <b>1.125" (25mm) soft dome tweeter</b> complements the woofer, providing extremely flat high-frequency response and amazing detail with minimal distortion.
+										Together, Lumino v2 delivers a complete soundstage with dreamy low-frequency bass response and crystal-clear dynamics.
 									</p>
 
 									</div>
 
 									<div id="petg" class="collapse" style="height: 0; opacity: 0;">
-
+										<h3 class="icon solid fa-chart-bar"> Transparent HiFi Audio Performance</h3>
 										<p style="margin-bottom: 0;">
 									PETG, used on the bottom half of Lumino+ and the entirety of Lumino's enclosure, is a strong and flexible material,
 									making it more effective at protection when compared to PLA. Much like PLA, PETG is <b>recyclable</b> but is not biodegradable
@@ -287,7 +287,7 @@
 
 
 								<div id="tpu" class="collapse" style="height: 0; opacity: 0;">
-
+									<h3 class="icon solid fa-drafting-compass"> Traditional and Contemporary Design Language</h3>
 									<p style="margin-bottom: 0;">
 									TPU is an extremely flexible filament that is used for Lumino's handle. This material with its high elasticity, shear strength, and flexural strength
 									give the handle a high quality and robust feel. TPU is sustainable choice because of its decent biodegradability. This material is <b>recyclable</b>, but Sunset
@@ -296,6 +296,13 @@
 							</div>
 
 						</div>
+						</section>
+						<section>
+							<header>
+								<h2 id="More">Want to see more?</h2>
+							</header>
+							<h3>Check out our other content!</h3>
+
 						<footer>
 							<ul class="items">
 								<li>
