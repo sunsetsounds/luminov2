@@ -167,7 +167,31 @@
 
 							<br>
 
-							<!-- The dots/circles -->
+							<p style="font-size:.6rem; margin-top:-10px; margin-bottom:9px; text-align: center"><b>Choose</b> a color below. Colors are WIP and subject to change.</p>
+							<div id = "colorways">
+							<ul class="actions" style="overflow-x: scroll; padding-bottom: 15px; padding-top: 0px; margin-bottom:-0px; ">
+								<!--<li><p style="font-size: 0.8rem; font-family: "Source Sans Pro""><b>Colors:</b></p></li>-->
+								<li><button onclick="currentSlide(6)" class=" oak tiny colors selected">Oak Wood</button></li>
+								<li><button onclick="currentSlide(11)" class="walnut tiny colors">Walnut Wood</button></li>
+								<li><button onclick="currentSlide(16)" class="cherry tiny colors">Cherry Wood</button></li>
+								<li><button onclick="currentSlide(21)" class="lapis tiny colors">Lapis Blue</button></li>
+								<li><button onclick="currentSlide(26)" class="carbon tiny colors">Carbon Black</button></li>
+								<li><button onclick="currentSlide(31)" class="rose tiny colors">Rose Gold</button></li>
+								<li><button onclick="currentSlide(36)" class="tea tiny colors">Green Tea</button></li>
+								<li><button onclick="currentSlide(41)" class="lavender tiny colors">Lavender</button></li>
+								<li><button onclick="currentSlide(46)" class="vinca tiny colors">Vinca Blue</button></li>
+							</ul>
+						</div>
+							<p style="margin-top:25px;"><strong>Lumino+ and Lumino</strong> are portable HiFi speakers that place a strong emphasis on sound quality and attention to detail.
+								Before Lumino, high fidelity audio systems were confined to static home setups to provide outstanding listening experience.
+								Portable speakers sacrifice sound quality and attention to detail for the sake of convenience and high unit production in a fast market.
+								Sunset Sounds has developed and engineered Lumino, an audio solution
+							 which brings out the best in HiFi and portable speakers by putting superior sound reproduction in a portable form factor. Lumino is
+							 also 3D printed to allow for a unique design and handcrafted for the best product finish and care. For the first time, you can bring
+							 HiFi quality audio wherever you go!
+
+							 </p>
+							<span class="image main"><img src="" alt="" /></span>
 
 							<script>
 								let slideIndex = 1;
@@ -198,33 +222,28 @@
 								slides[slideIndex-1].style.display = "block";
 								dots[slideIndex-1].className += " active";
 								}
+								// Get the container element
 
+
+								</script>
+
+							<script>
+								// Get the container element
+								var btnContainer = document.getElementById("colorways");
+
+								// Get all buttons with class="btn" inside the container
+								var btns = btnContainer.getElementsByClassName("colors");
+
+								// Loop through the buttons and add the active class to the current/clicked button
+								for (var i = 0; i < btns.length; i++) {
+								  btns[i].addEventListener("click", function() {
+								    var current = document.getElementsByClassName("selected");
+								    current[0].className = current[0].className.replace(" selected", "");
+								    this.className += " selected";
+								  });
+								}
 							</script>
-							<p style="font-size:.6rem; margin-top:-10px; margin-bottom:9px; text-align: center"><b>Choose</b> a color below. Colors are WIP and subject to change.</p>
 
-							<ul class="actions" style="overflow-x: scroll; padding-bottom: 15px; padding-top: 0px; margin-bottom:-0px; ">
-								<!--<li><p style="font-size: 0.8rem; font-family: "Source Sans Pro""><b>Colors:</b></p></li>-->
-								<li><button onclick="currentSlide(6)" class="tiny">Oak Wood</button></li>
-								<li><button onclick="currentSlide(11)" class="tiny">Walnut Wood</button></li>
-								<li><button onclick="currentSlide(16)" class="tiny">Cherry Wood</button></li>
-								<li><button onclick="currentSlide(21)" class="tiny">Lapis Blue</button></li>
-								<li><button onclick="currentSlide(26)" class="tiny">Carbon Black</button></li>
-								<li><button onclick="currentSlide(31)" class="tiny">Rose Gold</button></li>
-								<li><button onclick="currentSlide(36)" class="tiny">Green Tea</button></li>
-								<li><button onclick="currentSlide(41)" class="tiny">Lavender</button></li>
-								<li><button onclick="currentSlide(46)" class="tiny">Vinca Blue</button></li>
-							</ul>
-
-							<p style="margin-top:25px;"><strong>Lumino+ and Lumino</strong> are portable HiFi speakers that place a strong emphasis on sound quality and attention to detail.
-								Before Lumino, high fidelity audio systems were confined to static home setups to provide outstanding listening experience.
-								Portable speakers sacrifice sound quality and attention to detail for the sake of convenience and high unit production in a fast market.
-								Sunset Sounds has developed and engineered Lumino, an audio solution
-							 which brings out the best in HiFi and portable speakers by putting superior sound reproduction in a portable form factor. Lumino is
-							 also 3D printed to allow for a unique design and handcrafted for the best product finish and care. For the first time, you can bring
-							 HiFi quality audio wherever you go!
-
-							 </p>
-							<span class="image main"><img src="" alt="" /></span>
 						</div>
 					</section>
 
