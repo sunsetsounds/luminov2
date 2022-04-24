@@ -10,20 +10,20 @@
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #f1f1f1;
+  background: #777 ;
   margin-left: 25px;
   margin-right: 25px;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #777;
+  background: #f1f1f1;
 
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #555;
+  background: #ccc;
 }
 
 * {box-sizing:border-box}
