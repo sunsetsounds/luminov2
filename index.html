@@ -19,7 +19,7 @@
 			gtag('config', 'UA-142569880-1');
 		</script>
 
-		<title>Sunset Sounds - LuminoV2</title>
+		<title>Sunset Sounds - Lumino V2</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<meta name="description" content="" />
@@ -123,7 +123,7 @@
 							</ul>
 						</header>
 						<div class="content">
-							<span class="image fill" data-position="center"><img src="images/pic01clear.png" alt="" /></span>
+							<span class="image fill" data-position="center"><img src="images/lumino1-2_Rev 3_rightCornerLow_oakWithLED_transparent.png" alt="" /></span>
 						</div>
 					</section>
 
@@ -134,7 +134,7 @@
 						</header>
 
 						<div class="content">
-													<h3>Design Philosophy and Overview</h3>
+									<h3>Design Philosophy and Overview</h3>
 							 </p>
 							<!-- Slideshow container-->
 							<div class="slideshow-container" style="margin-bottom: -20px;">
@@ -192,57 +192,6 @@
 							redefines boundaries.
 							<span class="image main"><img src="" alt="" /></span>
 
-							<script>
-								let slideIndex = 1;
-								showSlides(slideIndex);
-
-								// Next/previous controls
-								function plusSlides(n) {
-								showSlides(slideIndex += n);
-								}
-
-								// Thumbnail image controls
-								function currentSlide(n) {
-								showSlides(slideIndex = n);
-								}
-
-								function showSlides(n) {
-								let i;
-								let slides = document.getElementsByClassName("mySlides");
-								let dots = document.getElementsByClassName("dot");
-								if (n > slides.length) {slideIndex = 1}
-								if (n < 1) {slideIndex = slides.length}
-								for (i = 0; i < slides.length; i++) {
-									slides[i].style.display = "none";
-								}
-								for (i = 0; i < dots.length; i++) {
-									dots[i].className = dots[i].className.replace(" active", "");
-								}
-								slides[slideIndex-1].style.display = "block";
-								dots[slideIndex-1].className += " active";
-								}
-								// Get the container element
-
-
-								</script>
-
-							<script>
-								// Get the container element
-								var btnContainer = document.getElementById("colorways");
-
-								// Get all buttons with class="btn" inside the container
-								var btns = btnContainer.getElementsByClassName("colors");
-
-								// Loop through the buttons and add the active class to the current/clicked button
-								for (var i = 0; i < btns.length; i++) {
-								  btns[i].addEventListener("click", function() {
-								    var current = document.getElementsByClassName("selected");
-								    current[0].className = current[0].className.replace(" selected", "");
-								    this.className += " selected";
-								  });
-								}
-							</script>
-
 						</div>
 					</section>
 
@@ -259,14 +208,14 @@
 								<li class="icon solid fa-wave-square">35Hz - 22kHz Response</li>
 								<li class="icon solid fa-bolt">2x50W (1% THD+N) Output</li>
 								<li class="icon solid fa-signal">System F3: 43Hz* </li>
-								<li class="icon solid fa-battery-full">50 Hour Battery Life**</li>
+								<li class="icon solid fa-battery-full">40 Hour Battery Life**</li>
 								<li class="icon solid fa-volume-up">100dB Max Output</li>
 								<li class="icon solid fa-feather-alt">5.00 lbs (2.27 kg)</li>
 
 							</ul>
 							<p style="font-size:.7rem">
-								*F3 is characteristic of a speaker's bass. It is the frequency achieved at -3dB from nominal. The lower, the better. <br>
-								**A modest estimate. Playtime can <b>drastically</b> improve at lower volumes.</p>
+								*F3 is the frequency achieved at -3dB and is characteristic of a speaker's bass. The lower, the better. <br>
+								**A modest estimate. Playtime can improve at lower volumes.</p>
 						</div>
 					</section>
 						<section>
@@ -274,17 +223,18 @@
 								<h2 id="documents">In-depth Dive</h2>
 							</header>
 							<div class="content">
-								<p><strong>Click</strong> below to learn more about each topic!</p>
-							<ul class="actions" style=" margin-bottom: 0; display:inline;">
-								<li><button onclick="collapse('woodpla','petg','tpu')" class=" fit">Speaker Drivers</button></li>
-								<li><button onclick="collapse('petg','woodpla','tpu')" class="fit">Audio Performance</button></li>
-								<li><button onclick="collapse('tpu','woodpla','petg')" class="fit">Design Details</button></li>
+								<p ><strong>Click</strong> below to learn more about each topic!</p>
+
+							<ul id = "inDepth" class="actions" style=" margin-bottom: 0; display:inline;">
+								<li><button onclick="collapse('drivers','performance','design')" class="collapseButton fit selected2">Speaker Drivers</button></li>
+								<li><button onclick="collapse('performance','drivers','design')" class="collapseButton fit">Audio Performance</button></li>
+								<li><button onclick="collapse('design','drivers','performance')" class="collapseButton fit">Design Details</button></li>
 							</ul>
 							<hr>
-									<div id="woodpla" class="collapse" style="height: 0; opacity: 0;">
+									<div id="drivers" class="collapse">
 
 
-									<h3 class="icon solid fa-volume-up"> Drivers Built for HiFi</h3>
+									<h3 class="icon solid fa-volume-up"> A two way system Built for HiFi</h3>
 									<p style="margin-bottom: 0;">
 									Lumino v2 features a high-performance, long-excursion, <b>5.25" (140mm) aluminum-cone main woofer</b> capable of reproducing fast transients and deep, accurate bass when coupled with
 										our precision-tuned <b>quad-array of 3.5" (90mm) passive radiators</b>. A <b>1.125" (25mm) soft dome tweeter</b> complements the woofer, providing extremely flat high-frequency response and amazing detail with minimal distortion.
@@ -293,23 +243,22 @@
 
 									</div>
 
-									<div id="petg" class="collapse" style="height: 0; opacity: 0;">
-										<h3 class="icon solid fa-chart-bar"> Transparent HiFi Audio Performance</h3>
+									<div id="performance" class="collapse" style="height: 0; opacity: 0;">
+										<h3 class="icon solid fa-chart-bar"> No-compromise HiFi Audio Performance</h3>
 										<p style="margin-bottom: 0;">
-									PETG, used on the bottom half of Lumino+ and the entirety of Lumino's enclosure, is a strong and flexible material,
-									making it more effective at protection when compared to PLA. Much like PLA, PETG is <b>recyclable</b> but is not biodegradable
-									because it is <b>oil based</b>. Still being recyclable, PETG is still a sustainable choice of materials when treated properly
-									and we are currently working on implementing a biodegradable PETG solution!
+									Lumino v2 was designed with high fidelity audio reproduction in mind. Delivering the most transparent output is
+									important in reproducing samples exactly like the artist intended. For this reason, we have spent obsessive amounts
+									of time engineering and tuning Lumino to do just that. The audio performance of Lumino v2 is shown through our
+									dedication to perfecting its response characteristics: A ruler flat response from 50Hz - 22kHz, extremely low F3 of 43 Hz,
+									and well controlled distortion figures.
 								</p>
 								</div>
 
 
-								<div id="tpu" class="collapse" style="height: 0; opacity: 0;">
+								<div id="design" class="collapse" style="height: 0; opacity: 0;">
 									<h3 class="icon solid fa-drafting-compass"> Traditional and Contemporary Design Language</h3>
 									<p style="margin-bottom: 0;">
-									TPU is an extremely flexible filament that is used for Lumino's handle. This material with its high elasticity, shear strength, and flexural strength
-									give the handle a high quality and robust feel. TPU is sustainable choice because of its decent biodegradability. This material is <b>recyclable</b>, but Sunset
-									Sounds is working on a plant-based TPU alternative to allow for industrial compostability!
+									Coming soon!
 								</p>
 							</div>
 
@@ -363,6 +312,72 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script>
+				// Get the container element
+				var btnContainer = document.getElementById("inDepth");
+
+				// Get all buttons with class="btn" inside the container
+				var btns = btnContainer.getElementsByClassName("collapseButton");
+
+				// Loop through the buttons and add the active class to the current/clicked button
+				for (var i = 0; i < btns.length; i++) {
+					btns[i].addEventListener("click", function() {
+						var current = document.getElementsByClassName("selected2");
+						current[0].className = current[0].className.replace(" selected2", "");
+						this.className += " selected2";
+					});
+				}	</script>
+		  <script>
+					let slideIndex = 1;
+					showSlides(slideIndex);
+
+					// Next/previous controls
+					function plusSlides(n) {
+					showSlides(slideIndex += n);
+					}
+
+					// Thumbnail image controls
+					function currentSlide(n) {
+					showSlides(slideIndex = n);
+					}
+
+					function showSlides(n) {
+					let i;
+					let slides = document.getElementsByClassName("mySlides");
+					let dots = document.getElementsByClassName("dot");
+					if (n > slides.length) {slideIndex = 1}
+					if (n < 1) {slideIndex = slides.length}
+					for (i = 0; i < slides.length; i++) {
+						slides[i].style.display = "none";
+					}
+					for (i = 0; i < dots.length; i++) {
+						dots[i].className = dots[i].className.replace(" active", "");
+					}
+					slides[slideIndex-1].style.display = "block";
+					dots[slideIndex-1].className += " active";
+					}
+					// Get the container element
+
+
+					</script>
+			<script>
+					// Get the container element
+					var btnContainer = document.getElementById("colorways");
+
+					// Get all buttons with class="btn" inside the container
+					var btns = btnContainer.getElementsByClassName("colors");
+
+					// Loop through the buttons and add the active class to the current/clicked button
+					for (var i = 0; i < btns.length; i++) {
+						btns[i].addEventListener("click", function() {
+							var current = document.getElementsByClassName("selected");
+							current[0].className = current[0].className.replace(" selected", "");
+							this.className += " selected";
+						});
+					}
+				</script>
+
+
 
 	</body>
 </html>

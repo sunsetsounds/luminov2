@@ -93,14 +93,26 @@ a{
   color: rgba(141, 152, 204, 1) !important;
 }
 
-
-
+/*learn more*/
 
 .collapse{
 	transition: opacity 0.5s ease-in-out;
 	overflow: hidden;
 }
 
+.collapseButton.selected2{
+  -moz-transition: background-color 0.6s ease-in-out, border-bottom 0.5s ease-in-out;
+  -webkit-transition: background-color 0.6s ease-in-out, border-bottom 0.5s ease-in-out;
+  -ms-transition: background-color 0.6s ease-in-out, border-bottom 0.5s ease-in-out;
+  transition: background-color 0.6s ease-in-out, border-bottom 0.5s ease-in-out;
+  background-color: rgba(73, 252, 212, 0.25) !important;
+  border-bottom: 9px solid rgba(73, 252, 255, 0.25) !important;
+  font-weight: 900;
+}
+
+.collapseButton:hover{
+  background-color: rgba(255,255,255,0.2);
+}
 
 /* Slideshow container */
 .slideshow-container {
@@ -485,7 +497,7 @@ input, select, textarea {
 /* Typography */
 
 	html {
-		font-size: 15pt;
+		font-size: 14pt;
 	}
   input[type="text"],
 	input[type="password"],
