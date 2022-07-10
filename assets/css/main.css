@@ -3418,18 +3418,15 @@ input, select, textarea {
 		}
 
 			.gallery .modal:before {
-				-moz-animation: gallery-modal-spinner 1s infinite linear;
-				-webkit-animation: gallery-modal-spinner 1s infinite linear;
-				-ms-animation: gallery-modal-spinner 1s infinite linear;
-				animation: gallery-modal-spinner 1s infinite linear;
+				-moz-animation: gallery-modal-spinner .5s infinite linear;
+				-webkit-animation: gallery-modal-spinner .5s infinite linear;
+				-ms-animation: gallery-modal-spinner .5s infinite linear;
+				animation: gallery-modal-spinner .5s infinite linear;
 				-moz-transition: opacity 0.25s ease;
 				-webkit-transition: opacity 0.25s ease;
 				-ms-transition: opacity 0.25s ease;
 				transition: opacity 0.25s ease;
-				-moz-transition-delay: 0.5s;
-				-webkit-transition-delay: 0.5s;
-				-ms-transition-delay: 0.5s;
-				transition-delay: 0.5s;
+		
 				background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='96px' height='96px' viewBox='0 0 96 96' zoomAndPan='disable'%3E%3Cstyle%3Ecircle %7Bfill: transparent%3B stroke: %23ffffff%3B stroke-width: 2px%3B %7D%3C/style%3E%3Cdefs%3E%3CclipPath id='corner'%3E%3Cpolygon points='0,0 48,0 48,48 96,48 96,96 0,96' /%3E%3C/clipPath%3E%3C/defs%3E%3Cg clip-path='url(%23corner)'%3E%3Ccircle cx='48' cy='48' r='32'/%3E%3C/g%3E%3C/svg%3E");
 				background-position: center;
 				background-repeat: no-repeat;
@@ -4223,7 +4220,7 @@ input, select, textarea {
 	}
 
 	#wrapper:before {
-		transition: opacity 1s ease;
+		transition: opacity .2s ease;
 	}
 
 		body.is-preload #wrapper:before {
@@ -4231,16 +4228,16 @@ input, select, textarea {
 		}
 
 	#wrapper > section.intro {
-		transition: opacity 1s ease;
+		transition: opacity .2s ease;
 		opacity: 1;
 	}
 
 		#wrapper > section.intro > header {
-			transition: transform 1s ease;
+			transition: transform .2s ease;
 		}
 
 		#wrapper > section.intro > .content {
-			transition: transform 1s ease;
+			transition: transform .2s ease;
 		}
 
 		body.is-preload #wrapper > section.intro {
@@ -4258,7 +4255,7 @@ input, select, textarea {
 		@media screen and (max-width: 1280px) {
 
 			#wrapper > section.intro > header > * {
-				transition: transform 1s ease, opacity 1s ease;
+				transition: transform .5s ease, opacity .5s ease;
 			}
 
 			body.is-preload #wrapper > section.intro > header {
