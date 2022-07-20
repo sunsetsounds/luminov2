@@ -25,7 +25,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
-		<link rel="stylesheet" href="assets/css/main.css" />
+		<link async rel="stylesheet" href="assets/css/main.css" />
 		<link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png" async>
 	  <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png" async>
 	  <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png" async>
@@ -40,7 +40,7 @@
 	  <meta name="author" content="Sunset Sounds">
 
 		<!-- MailerLite Universal -->
-		<script>
+		<script async>
     (function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[])
     .push(arguments);},l=d.createElement(e),l.async=1,l.src=u,
     n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n);})
@@ -48,27 +48,7 @@
     ml('account', '38377');
 	</script>
 		<!-- End MailerLite Universal -->
-		<!-- collapse -->
-		<script async>
-		function collapse(args,args2,args3) {
-			var x = document.getElementById(args);
-			var y = document.getElementById(args2);
-			var z = document.getElementById(args3);
-			if (x.style.opacity == "0") {
-				y.style.opacity = "0";
-				z.style.opacity = "0";
-				x.style.opacity = "1";
-				y.style.height = "0";
-				z.style.height = "0";
-				x.style.height = "100%";
 
-			} else {
-				x.style.opacity = "0";
-				x.style.height = "0";
-			}
-
-		}
-		</script>
 		<!-- Meta Pixel Code -->
 <script async>
 !function(f,b,e,v,n,t,s)
@@ -127,6 +107,8 @@ src="https://www.facebook.com/tr?id=596424701841860&ev=PageView&noscript=1"
 						</div>
 					</section>
 
+				</body>
+				<body>
 				<!-- Section -->
 					<section id="first">
 						<header>
@@ -477,7 +459,7 @@ src="https://www.facebook.com/tr?id=596424701841860&ev=PageView&noscript=1"
 					</section>
 
 				<!-- Copyright -->
-					<div class="copyright" style="color:#ffffff">&copy; Sunset Sounds. 2022. All rights reserved.<br><br><a style="font-size: .6rem" href="https://sunsetsoundssf.com/#privacy" target="blank">Privacy Policy</a></div>
+					<div class="copyright" style="color:#ffffff">&copy; Sunset Sounds. 2022. All rights reserved.<br><br><a style="font-size: .6rem" href="https://sunsetsoundssf.com/privacy" target="blank">Privacy Policy</a></div>
 
 			</div>
 
@@ -595,7 +577,27 @@ src="https://www.facebook.com/tr?id=596424701841860&ev=PageView&noscript=1"
 					}
 				</script>
 
+				<!-- collapse -->
+				<script async>
+				function collapse(args,args2,args3) {
+					var x = document.getElementById(args);
+					var y = document.getElementById(args2);
+					var z = document.getElementById(args3);
+					if (x.style.opacity == "0") {
+						y.style.opacity = "0";
+						z.style.opacity = "0";
+						x.style.opacity = "1";
+						y.style.height = "0";
+						z.style.height = "0";
+						x.style.height = "100%";
 
+					} else {
+						x.style.opacity = "0";
+						x.style.height = "0";
+					}
+
+				}
+				</script>
 
 	</body>
 </html>
