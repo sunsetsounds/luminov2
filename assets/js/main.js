@@ -20,12 +20,12 @@
 			xxsmall:   [null,       '360px'    ]
 		});
 
-	// Play initial animations on page load.
-		$window.on('load', function() {
+	// Play initial animations after 200ms;
+		//$window.on('load', function() {
 			window.setTimeout(function() {
 				$body.removeClass('is-preload');
-			}, 100);
-		});
+			}, 200);
+	//	});
 
 	// Hack: Enable IE workarounds.
 		if (browser.name == 'ie')
