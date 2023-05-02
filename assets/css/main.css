@@ -522,14 +522,14 @@ input, select, textarea {
       input[type="tel"],
       input[type="search"],
       input[type="url"] {
-        height: 2.5rem;
+        height: 2.3rem;
       }
 		}
 
 		@media screen and (max-width: 1152px) {
 
 			html {
-				font-size: 14pt;
+				font-size: 12pt;
 			}
       input[type="text"],
       input[type="password"],
